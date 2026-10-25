@@ -1,0 +1,737 @@
+// Data store used by index.html
+window.PAYROLL_DATA = {
+ "department": [
+  {
+   "dept_id": 1,
+   "dept_name": "HR",
+   "location": "Dhaka"
+  },
+  {
+   "dept_id": 2,
+   "dept_name": "IT",
+   "location": "Dhaka"
+  },
+  {
+   "dept_id": 3,
+   "dept_name": "Finance",
+   "location": "Khulna"
+  },
+  {
+   "dept_id": 4,
+   "dept_name": "Marketing",
+   "location": "Khulna"
+  }
+ ],
+ "grade": [
+  {
+   "grade_id": 1,
+   "grade_name": "A",
+   "basic_salary": 5000,
+   "bonus": 1000
+  },
+  {
+   "grade_id": 2,
+   "grade_name": "B",
+   "basic_salary": 4000,
+   "bonus": 800
+  },
+  {
+   "grade_id": 3,
+   "grade_name": "C",
+   "basic_salary": 3000,
+   "bonus": 600
+  },
+  {
+   "grade_id": 4,
+   "grade_name": "D",
+   "basic_salary": 2000,
+   "bonus": 400
+  }
+ ],
+ "employee": [
+  {
+   "emp_id": 1,
+   "full_name": "Anto Paul",
+   "email": "anto@example.com",
+   "role": "Admin",
+   "dept_id": 1,
+   "grade_id": 1,
+   "manager_id": null,
+   "hire_date": "2022-03-01",
+   "status": "Active"
+  },
+  {
+   "emp_id": 2,
+   "full_name": "Niloy Das",
+   "email": "niloy@example.com",
+   "role": "Manager",
+   "dept_id": 2,
+   "grade_id": 2,
+   "manager_id": 1,
+   "hire_date": "2023-05-05",
+   "status": "Active"
+  },
+  {
+   "emp_id": 3,
+   "full_name": "Rahul Sen",
+   "email": "rahul@example.com",
+   "role": "Worker",
+   "dept_id": 3,
+   "grade_id": 3,
+   "manager_id": 2,
+   "hire_date": "2023-01-15",
+   "status": "Active"
+  },
+  {
+   "emp_id": 4,
+   "full_name": "Raj Roy",
+   "email": "raj@example.com",
+   "role": "Worker",
+   "dept_id": 4,
+   "grade_id": 1,
+   "manager_id": 2,
+   "hire_date": "2023-01-15",
+   "status": "Active"
+  },
+  {
+   "emp_id": 5,
+   "full_name": "Mitu Akter",
+   "email": "mitu@example.com",
+   "role": "Worker",
+   "dept_id": 2,
+   "grade_id": 3,
+   "manager_id": 2,
+   "hire_date": "2024-11-10",
+   "status": "Active"
+  },
+  {
+   "emp_id": 6,
+   "full_name": "Sumon Ali",
+   "email": "sumon@example.com",
+   "role": "Worker",
+   "dept_id": 3,
+   "grade_id": 4,
+   "manager_id": 3,
+   "hire_date": "2025-02-20",
+   "status": "Active"
+  },
+  {
+   "emp_id": 7,
+   "full_name": "Tania Khan",
+   "email": "tania@example.com",
+   "role": "Manager",
+   "dept_id": 1,
+   "grade_id": 2,
+   "manager_id": 1,
+   "hire_date": "2022-08-18",
+   "status": "Active"
+  },
+  {
+   "emp_id": 8,
+   "full_name": "Imran Hossain",
+   "email": "imran@example.com",
+   "role": "Worker",
+   "dept_id": 2,
+   "grade_id": 2,
+   "manager_id": 2,
+   "hire_date": "2025-06-01",
+   "status": "Active"
+  },
+  {
+   "emp_id": 9,
+   "full_name": "Farhana Islam",
+   "email": "farhana@example.com",
+   "role": "Worker",
+   "dept_id": 4,
+   "grade_id": 3,
+   "manager_id": 4,
+   "hire_date": "2024-03-12",
+   "status": "Active"
+  },
+  {
+   "emp_id": 10,
+   "full_name": "Joy Biswas",
+   "email": "joy@example.com",
+   "role": "Worker",
+   "dept_id": 3,
+   "grade_id": 4,
+   "manager_id": 3,
+   "hire_date": "2026-01-05",
+   "status": "Active"
+  }
+ ],
+ "payroll": [
+  {
+   "pay_id": 1,
+   "emp_id": 1,
+   "pay_month": "2026-07",
+   "base_salary": 5000,
+   "bonus": 1000,
+   "overtime_pay": 0,
+   "tax": 600,
+   "net_pay": 5400,
+   "status": "Paid"
+  },
+  {
+   "pay_id": 2,
+   "emp_id": 1,
+   "pay_month": "2026-08",
+   "base_salary": 5000,
+   "bonus": 1000,
+   "overtime_pay": 60,
+   "tax": 606,
+   "net_pay": 5454,
+   "status": "Paid"
+  },
+  {
+   "pay_id": 3,
+   "emp_id": 1,
+   "pay_month": "2026-09",
+   "base_salary": 5000,
+   "bonus": 1000,
+   "overtime_pay": 120,
+   "tax": 612,
+   "net_pay": 5508,
+   "status": "Pending"
+  },
+  {
+   "pay_id": 4,
+   "emp_id": 2,
+   "pay_month": "2026-07",
+   "base_salary": 4000,
+   "bonus": 800,
+   "overtime_pay": 60,
+   "tax": 486,
+   "net_pay": 4374,
+   "status": "Paid"
+  },
+  {
+   "pay_id": 5,
+   "emp_id": 2,
+   "pay_month": "2026-08",
+   "base_salary": 4000,
+   "bonus": 800,
+   "overtime_pay": 120,
+   "tax": 492,
+   "net_pay": 4428,
+   "status": "Paid"
+  },
+  {
+   "pay_id": 6,
+   "emp_id": 2,
+   "pay_month": "2026-09",
+   "base_salary": 4000,
+   "bonus": 800,
+   "overtime_pay": 180,
+   "tax": 498,
+   "net_pay": 4482,
+   "status": "Paid"
+  },
+  {
+   "pay_id": 7,
+   "emp_id": 3,
+   "pay_month": "2026-07",
+   "base_salary": 3000,
+   "bonus": 600,
+   "overtime_pay": 120,
+   "tax": 372,
+   "net_pay": 3348,
+   "status": "Paid"
+  },
+  {
+   "pay_id": 8,
+   "emp_id": 3,
+   "pay_month": "2026-08",
+   "base_salary": 3000,
+   "bonus": 600,
+   "overtime_pay": 180,
+   "tax": 378,
+   "net_pay": 3402,
+   "status": "Paid"
+  },
+  {
+   "pay_id": 9,
+   "emp_id": 3,
+   "pay_month": "2026-09",
+   "base_salary": 3000,
+   "bonus": 600,
+   "overtime_pay": 0,
+   "tax": 360,
+   "net_pay": 3240,
+   "status": "Paid"
+  },
+  {
+   "pay_id": 10,
+   "emp_id": 4,
+   "pay_month": "2026-07",
+   "base_salary": 5000,
+   "bonus": 1000,
+   "overtime_pay": 180,
+   "tax": 618,
+   "net_pay": 5562,
+   "status": "Paid"
+  },
+  {
+   "pay_id": 11,
+   "emp_id": 4,
+   "pay_month": "2026-08",
+   "base_salary": 5000,
+   "bonus": 1000,
+   "overtime_pay": 0,
+   "tax": 600,
+   "net_pay": 5400,
+   "status": "Paid"
+  },
+  {
+   "pay_id": 12,
+   "emp_id": 4,
+   "pay_month": "2026-09",
+   "base_salary": 5000,
+   "bonus": 1000,
+   "overtime_pay": 60,
+   "tax": 606,
+   "net_pay": 5454,
+   "status": "Paid"
+  },
+  {
+   "pay_id": 13,
+   "emp_id": 5,
+   "pay_month": "2026-07",
+   "base_salary": 3000,
+   "bonus": 600,
+   "overtime_pay": 0,
+   "tax": 360,
+   "net_pay": 3240,
+   "status": "Paid"
+  },
+  {
+   "pay_id": 14,
+   "emp_id": 5,
+   "pay_month": "2026-08",
+   "base_salary": 3000,
+   "bonus": 600,
+   "overtime_pay": 60,
+   "tax": 366,
+   "net_pay": 3294,
+   "status": "Paid"
+  },
+  {
+   "pay_id": 15,
+   "emp_id": 5,
+   "pay_month": "2026-09",
+   "base_salary": 3000,
+   "bonus": 600,
+   "overtime_pay": 120,
+   "tax": 372,
+   "net_pay": 3348,
+   "status": "Pending"
+  },
+  {
+   "pay_id": 16,
+   "emp_id": 6,
+   "pay_month": "2026-07",
+   "base_salary": 2000,
+   "bonus": 400,
+   "overtime_pay": 60,
+   "tax": 246,
+   "net_pay": 2214,
+   "status": "Paid"
+  },
+  {
+   "pay_id": 17,
+   "emp_id": 6,
+   "pay_month": "2026-08",
+   "base_salary": 2000,
+   "bonus": 400,
+   "overtime_pay": 120,
+   "tax": 252,
+   "net_pay": 2268,
+   "status": "Paid"
+  },
+  {
+   "pay_id": 18,
+   "emp_id": 6,
+   "pay_month": "2026-09",
+   "base_salary": 2000,
+   "bonus": 400,
+   "overtime_pay": 180,
+   "tax": 258,
+   "net_pay": 2322,
+   "status": "Paid"
+  },
+  {
+   "pay_id": 19,
+   "emp_id": 7,
+   "pay_month": "2026-07",
+   "base_salary": 4000,
+   "bonus": 800,
+   "overtime_pay": 120,
+   "tax": 492,
+   "net_pay": 4428,
+   "status": "Paid"
+  },
+  {
+   "pay_id": 20,
+   "emp_id": 7,
+   "pay_month": "2026-08",
+   "base_salary": 4000,
+   "bonus": 800,
+   "overtime_pay": 180,
+   "tax": 498,
+   "net_pay": 4482,
+   "status": "Paid"
+  },
+  {
+   "pay_id": 21,
+   "emp_id": 7,
+   "pay_month": "2026-09",
+   "base_salary": 4000,
+   "bonus": 800,
+   "overtime_pay": 0,
+   "tax": 480,
+   "net_pay": 4320,
+   "status": "Paid"
+  },
+  {
+   "pay_id": 22,
+   "emp_id": 8,
+   "pay_month": "2026-07",
+   "base_salary": 4000,
+   "bonus": 800,
+   "overtime_pay": 180,
+   "tax": 498,
+   "net_pay": 4482,
+   "status": "Paid"
+  },
+  {
+   "pay_id": 23,
+   "emp_id": 8,
+   "pay_month": "2026-08",
+   "base_salary": 4000,
+   "bonus": 800,
+   "overtime_pay": 0,
+   "tax": 480,
+   "net_pay": 4320,
+   "status": "Paid"
+  },
+  {
+   "pay_id": 24,
+   "emp_id": 8,
+   "pay_month": "2026-09",
+   "base_salary": 4000,
+   "bonus": 800,
+   "overtime_pay": 60,
+   "tax": 486,
+   "net_pay": 4374,
+   "status": "Paid"
+  },
+  {
+   "pay_id": 25,
+   "emp_id": 9,
+   "pay_month": "2026-07",
+   "base_salary": 3000,
+   "bonus": 600,
+   "overtime_pay": 0,
+   "tax": 360,
+   "net_pay": 3240,
+   "status": "Paid"
+  },
+  {
+   "pay_id": 26,
+   "emp_id": 9,
+   "pay_month": "2026-08",
+   "base_salary": 3000,
+   "bonus": 600,
+   "overtime_pay": 60,
+   "tax": 366,
+   "net_pay": 3294,
+   "status": "Paid"
+  },
+  {
+   "pay_id": 27,
+   "emp_id": 9,
+   "pay_month": "2026-09",
+   "base_salary": 3000,
+   "bonus": 600,
+   "overtime_pay": 120,
+   "tax": 372,
+   "net_pay": 3348,
+   "status": "Pending"
+  },
+  {
+   "pay_id": 28,
+   "emp_id": 10,
+   "pay_month": "2026-07",
+   "base_salary": 2000,
+   "bonus": 400,
+   "overtime_pay": 60,
+   "tax": 246,
+   "net_pay": 2214,
+   "status": "Paid"
+  },
+  {
+   "pay_id": 29,
+   "emp_id": 10,
+   "pay_month": "2026-08",
+   "base_salary": 2000,
+   "bonus": 400,
+   "overtime_pay": 120,
+   "tax": 252,
+   "net_pay": 2268,
+   "status": "Paid"
+  },
+  {
+   "pay_id": 30,
+   "emp_id": 10,
+   "pay_month": "2026-09",
+   "base_salary": 2000,
+   "bonus": 400,
+   "overtime_pay": 180,
+   "tax": 258,
+   "net_pay": 2322,
+   "status": "Paid"
+  }
+ ],
+ "attendance": [
+  {
+   "att_id": 1,
+   "emp_id": 1,
+   "pay_month": "2026-07",
+   "days_present": 26,
+   "days_absent": 0,
+   "overtime_hours": 0
+  },
+  {
+   "att_id": 2,
+   "emp_id": 1,
+   "pay_month": "2026-08",
+   "days_present": 24,
+   "days_absent": 2,
+   "overtime_hours": 3
+  },
+  {
+   "att_id": 3,
+   "emp_id": 1,
+   "pay_month": "2026-09",
+   "days_present": 22,
+   "days_absent": 4,
+   "overtime_hours": 6
+  },
+  {
+   "att_id": 4,
+   "emp_id": 2,
+   "pay_month": "2026-07",
+   "days_present": 23,
+   "days_absent": 3,
+   "overtime_hours": 3
+  },
+  {
+   "att_id": 5,
+   "emp_id": 2,
+   "pay_month": "2026-08",
+   "days_present": 26,
+   "days_absent": 0,
+   "overtime_hours": 6
+  },
+  {
+   "att_id": 6,
+   "emp_id": 2,
+   "pay_month": "2026-09",
+   "days_present": 24,
+   "days_absent": 2,
+   "overtime_hours": 9
+  },
+  {
+   "att_id": 7,
+   "emp_id": 3,
+   "pay_month": "2026-07",
+   "days_present": 25,
+   "days_absent": 1,
+   "overtime_hours": 6
+  },
+  {
+   "att_id": 8,
+   "emp_id": 3,
+   "pay_month": "2026-08",
+   "days_present": 23,
+   "days_absent": 3,
+   "overtime_hours": 9
+  },
+  {
+   "att_id": 9,
+   "emp_id": 3,
+   "pay_month": "2026-09",
+   "days_present": 26,
+   "days_absent": 0,
+   "overtime_hours": 0
+  },
+  {
+   "att_id": 10,
+   "emp_id": 4,
+   "pay_month": "2026-07",
+   "days_present": 22,
+   "days_absent": 4,
+   "overtime_hours": 9
+  },
+  {
+   "att_id": 11,
+   "emp_id": 4,
+   "pay_month": "2026-08",
+   "days_present": 25,
+   "days_absent": 1,
+   "overtime_hours": 0
+  },
+  {
+   "att_id": 12,
+   "emp_id": 4,
+   "pay_month": "2026-09",
+   "days_present": 23,
+   "days_absent": 3,
+   "overtime_hours": 3
+  },
+  {
+   "att_id": 13,
+   "emp_id": 5,
+   "pay_month": "2026-07",
+   "days_present": 24,
+   "days_absent": 2,
+   "overtime_hours": 0
+  },
+  {
+   "att_id": 14,
+   "emp_id": 5,
+   "pay_month": "2026-08",
+   "days_present": 22,
+   "days_absent": 4,
+   "overtime_hours": 3
+  },
+  {
+   "att_id": 15,
+   "emp_id": 5,
+   "pay_month": "2026-09",
+   "days_present": 25,
+   "days_absent": 1,
+   "overtime_hours": 6
+  },
+  {
+   "att_id": 16,
+   "emp_id": 6,
+   "pay_month": "2026-07",
+   "days_present": 26,
+   "days_absent": 0,
+   "overtime_hours": 3
+  },
+  {
+   "att_id": 17,
+   "emp_id": 6,
+   "pay_month": "2026-08",
+   "days_present": 24,
+   "days_absent": 2,
+   "overtime_hours": 6
+  },
+  {
+   "att_id": 18,
+   "emp_id": 6,
+   "pay_month": "2026-09",
+   "days_present": 22,
+   "days_absent": 4,
+   "overtime_hours": 9
+  },
+  {
+   "att_id": 19,
+   "emp_id": 7,
+   "pay_month": "2026-07",
+   "days_present": 23,
+   "days_absent": 3,
+   "overtime_hours": 6
+  },
+  {
+   "att_id": 20,
+   "emp_id": 7,
+   "pay_month": "2026-08",
+   "days_present": 26,
+   "days_absent": 0,
+   "overtime_hours": 9
+  },
+  {
+   "att_id": 21,
+   "emp_id": 7,
+   "pay_month": "2026-09",
+   "days_present": 24,
+   "days_absent": 2,
+   "overtime_hours": 0
+  },
+  {
+   "att_id": 22,
+   "emp_id": 8,
+   "pay_month": "2026-07",
+   "days_present": 25,
+   "days_absent": 1,
+   "overtime_hours": 9
+  },
+  {
+   "att_id": 23,
+   "emp_id": 8,
+   "pay_month": "2026-08",
+   "days_present": 23,
+   "days_absent": 3,
+   "overtime_hours": 0
+  },
+  {
+   "att_id": 24,
+   "emp_id": 8,
+   "pay_month": "2026-09",
+   "days_present": 26,
+   "days_absent": 0,
+   "overtime_hours": 3
+  },
+  {
+   "att_id": 25,
+   "emp_id": 9,
+   "pay_month": "2026-07",
+   "days_present": 22,
+   "days_absent": 4,
+   "overtime_hours": 0
+  },
+  {
+   "att_id": 26,
+   "emp_id": 9,
+   "pay_month": "2026-08",
+   "days_present": 25,
+   "days_absent": 1,
+   "overtime_hours": 3
+  },
+  {
+   "att_id": 27,
+   "emp_id": 9,
+   "pay_month": "2026-09",
+   "days_present": 23,
+   "days_absent": 3,
+   "overtime_hours": 6
+  },
+  {
+   "att_id": 28,
+   "emp_id": 10,
+   "pay_month": "2026-07",
+   "days_present": 24,
+   "days_absent": 2,
+   "overtime_hours": 3
+  },
+  {
+   "att_id": 29,
+   "emp_id": 10,
+   "pay_month": "2026-08",
+   "days_present": 22,
+   "days_absent": 4,
+   "overtime_hours": 6
+  },
+  {
+   "att_id": 30,
+   "emp_id": 10,
+   "pay_month": "2026-09",
+   "days_present": 25,
+   "days_absent": 1,
+   "overtime_hours": 9
+  }
+ ]
+};

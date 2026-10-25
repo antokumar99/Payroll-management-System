@@ -1,0 +1,11 @@
+emp_id,full_name,email,role,dept_id,grade_id,manager_id,hire_date,status
+1,Anto Paul,anto@example.com,Admin,1,1,,2022-03-01,Active
+2,Niloy Das,niloy@example.com,Manager,2,2,1,2023-05-05,Active
+3,Rahul Sen,rahul@example.com,Worker,3,3,2,2023-01-15,Active
+4,Raj Roy,raj@example.com,Worker,4,1,2,2023-01-15,Active
+5,Mitu Akter,mitu@example.com,Worker,2,3,2,2024-11-10,Active
+6,Sumon Ali,sumon@example.com,Worker,3,4,3,2025-02-20,Active
+7,Tania Khan,tania@example.com,Manager,1,2,1,2022-08-18,Active
+8,Imran Hossain,imran@example.com,Worker,2,2,2,2025-06-01,Active
+9,Farhana Islam,farhana@example.com,Worker,4,3,4,2024-03-12,Active
+10,Joy Biswas,joy@example.com,Worker,3,4,3,2026-01-05,Active
